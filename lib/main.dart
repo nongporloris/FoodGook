@@ -10,61 +10,19 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    /// Normal Logo Splash screen
-    Widget example1 = SplashScreenView(
-      home: SecondScreen(),
-      duration: 3000,
-      imageSize: 200,
-      imageSrc: "logo.png",
-      backgroundColor: Colors.white,
-    );
-
-    /// Logo with animated Colorize text
-    Widget example2 = SplashScreenView(
-      home: SecondScreen(),
-      duration: 5000,
-      imageSize: 100,
-      imageSrc: "logo.png",
-      text: "Colorize Text",
-      textType: TextType.ColorizeAnimationText,
-      textStyle: TextStyle(
-        fontSize: 40.0,
-      ),
-      colors: [
-        Colors.purple,
-        Colors.blue,
-        Colors.yellow,
-        Colors.red,
-      ],
-      backgroundColor: Colors.white,
-    );
-
     /// Logo with Typer Animated Text example
     Widget example3 = SplashScreenView(
       home: SecondScreen(),
       duration: 3000,
       imageSize: 100,
       imageSrc: "logo.png",
-      text: "Typer Animated Text",
+      text: "FoodGook",
       textType: TextType.TyperAnimatedText,
       textStyle: TextStyle(
         fontSize: 30.0,
+        color: Colors.white,
       ),
-      backgroundColor: Colors.white,
-    );
-
-    /// Logo with Scale Animated Text example
-    Widget example4 = SplashScreenView(
-      home: SecondScreen(),
-      duration: 3000,
-      imageSize: 100,
-      imageSrc: "logo.png",
-      text: "Scale Animated Text",
-      textType: TextType.ScaleAnimatedText,
-      textStyle: TextStyle(
-        fontSize: 30.0,
-      ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.red,
     );
 
     /// Logo with Normal Text example
@@ -73,17 +31,19 @@ class MyApp extends StatelessWidget {
       duration: 3000,
       imageSize: 100,
       imageSrc: "logo.png",
-      text: "Normal Text",
+      text: "FoodGook",
       textType: TextType.NormalText,
       textStyle: TextStyle(
         fontSize: 30.0,
+        color: Colors.white,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.red,
     );
 
     return MaterialApp(
       title: 'Splash screen Demo',
-      home: example5,
+      home: example3, //3,5
+      debugShowCheckedModeBanner: false,
     );
   }
 }
