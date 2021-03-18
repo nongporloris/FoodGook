@@ -6,7 +6,7 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Second Screen"),
+        child: Text("Login"),
       ),
     );
   }
