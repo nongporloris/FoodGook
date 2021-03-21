@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     /// Logo with Typer Animated Text example
     Widget example = SplashScreenView(
-      home: SecondScreen(),
+      home: MyHomePage(),
       duration: 3000,
       imageSize: 100,
       imageSrc: "logo.png",
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Splash screen Demo',
-      home: example, //3,5
+      home: example,
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         '/signup': (BuildContext context) => new SignupPage()
