@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         fontSize: 30.0,
         color: Colors.white,
       ),
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.orange[900],
     );
 
     return MaterialApp(

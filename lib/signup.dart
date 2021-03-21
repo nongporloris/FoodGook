@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:email_validator/email_validator.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -32,7 +33,7 @@ class _SignupPageState extends State<SignupPage> {
                     style: TextStyle(
                         fontSize: 80.0,
                         fontWeight: FontWeight.bold,
-                        color: Colors.orange[800]),
+                        color: Colors.orange[900]),
                   ),
                 )
               ],
@@ -49,10 +50,11 @@ class _SignupPageState extends State<SignupPage> {
                             fontFamily: 'Rublik',
                             fontWeight: FontWeight.bold,
                             color: Colors.grey),
+                        hintText: "example@gmail.com",
                         // hintText: 'EMAIL',
                         // hintStyle: ,
                         focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.orange[800]))),
+                            borderSide: BorderSide(color: Colors.orange[900]))),
                   ),
                   SizedBox(height: 10.0),
                   TextField(
@@ -63,7 +65,7 @@ class _SignupPageState extends State<SignupPage> {
                             fontWeight: FontWeight.bold,
                             color: Colors.grey),
                         focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.orange[800]))),
+                            borderSide: BorderSide(color: Colors.orange[900]))),
                   ),
                   SizedBox(height: 10.0),
                   TextField(
@@ -73,8 +75,9 @@ class _SignupPageState extends State<SignupPage> {
                             fontFamily: 'Rublik',
                             fontWeight: FontWeight.bold,
                             color: Colors.grey),
+                        hintText: "Must have at least 6 characters",
                         focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.orange[800]))),
+                            borderSide: BorderSide(color: Colors.orange[900]))),
                     obscureText: true,
                   ),
                   SizedBox(height: 10.0),
@@ -86,7 +89,7 @@ class _SignupPageState extends State<SignupPage> {
                             fontWeight: FontWeight.bold,
                             color: Colors.grey),
                         focusedBorder: UnderlineInputBorder(
-                            borderSide: BorderSide(color: Colors.orange[800]))),
+                            borderSide: BorderSide(color: Colors.orange[900]))),
                     keyboardType: TextInputType.number,
                     inputFormatters: <TextInputFormatter>[
                       FilteringTextInputFormatter.digitsOnly
@@ -99,7 +102,7 @@ class _SignupPageState extends State<SignupPage> {
                       child: Material(
                         borderRadius: BorderRadius.circular(20.0),
                         shadowColor: Colors.orangeAccent,
-                        color: Colors.orange[800],
+                        color: Colors.orange[900],
                         elevation: 7.0,
                         child: GestureDetector(
                           onTap: () {},

@@ -44,6 +44,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "email_validator",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/email_validator-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "1.24"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0",
       "packageUri": "lib/",
@@ -146,7 +152,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-18T18:02:27.856601Z",
+  "generated": "2021-03-21T14:02:14.922266Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }
