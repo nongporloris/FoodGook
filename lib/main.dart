@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
-import 'SecondScreen.dart';
+import 'signin.dart';
+import 'signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// Logo with Typer Animated Text example
-    Widget example3 = SplashScreenView(
+    Widget example = SplashScreenView(
       home: SecondScreen(),
       duration: 3000,
       imageSize: 100,
@@ -25,25 +26,13 @@ class MyApp extends StatelessWidget {
       backgroundColor: Colors.red,
     );
 
-    /// Logo with Normal Text example
-    Widget example5 = SplashScreenView(
-      home: SecondScreen(),
-      duration: 3000,
-      imageSize: 100,
-      imageSrc: "logo.png",
-      text: "FoodGook",
-      textType: TextType.NormalText,
-      textStyle: TextStyle(
-        fontSize: 30.0,
-        color: Colors.white,
-      ),
-      backgroundColor: Colors.red,
-    );
-
     return MaterialApp(
       title: 'Splash screen Demo',
-      home: example3, //3,5
+      home: example, //3,5
       debugShowCheckedModeBanner: false,
+      routes: <String, WidgetBuilder>{
+        '/signup': (BuildContext context) => new SignupPage()
+      },
     );
   }
 }
