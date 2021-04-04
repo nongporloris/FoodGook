@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontFamily: 'Rublik',
                         fontSize: 80.0,
                         fontWeight: FontWeight.bold,
-                        color: Colors.orange[800])),
+                        color: Colors.orange[900])),
               )
             ],
           ),
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold,
                           color: Colors.grey),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.orange[800]))),
+                          borderSide: BorderSide(color: Colors.orange[900]))),
                 ),
                 SizedBox(height: 20.0),
                 TextField(
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontWeight: FontWeight.bold,
                           color: Colors.grey),
                       focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Colors.orange[800]))),
+                          borderSide: BorderSide(color: Colors.orange[900]))),
                   obscureText: true,
                 ),
                 SizedBox(height: 5.0),
@@ -88,7 +88,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text(
                       'Forgot Password',
                       style: TextStyle(
-                          color: Colors.orange[800],
+                          color: Colors.orange[900],
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Rublik',
                           decoration: TextDecoration.underline),
@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Material(
                     borderRadius: BorderRadius.circular(20.0),
                     shadowColor: Colors.orangeAccent,
-                    color: Colors.orange[800],
+                    color: Colors.orange[900],
                     elevation: 7.0,
                     child: GestureDetector(
                       onTap: () {},
@@ -164,7 +164,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text(
                 'Register',
                 style: TextStyle(
-                    color: Colors.orange[800],
+                    color: Colors.orange[900],
                     fontFamily: 'Rublik',
                     fontWeight: FontWeight.bold,
                     decoration: TextDecoration.underline),
