@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
-import 'widgets/signin.dart';
-import 'widgets/signup.dart';
+import 'screens/signin.dart';
+import 'screens/signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         fontSize: 30.0,
         color: Colors.white,
       ),
-      backgroundColor: Colors.orange[900],
+      backgroundColor: Color(0xffff6240),
     );
 
     return MaterialApp(
