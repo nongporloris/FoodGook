@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
-import 'signin.dart';
-import 'signup.dart';
+import 'widgets/signin.dart';
+import 'widgets/signup.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     /// Logo with Typer Animated Text example
     Widget example = SplashScreenView(
+      //package: splash_screen_view
       home: MyHomePage(),
       duration: 3000,
       imageSize: 100,
