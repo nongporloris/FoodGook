@@ -3,6 +3,7 @@ import 'package:splash_screen_view/SplashScreenView.dart';
 
 import 'screens/signin.dart';
 import 'screens/signup.dart';
+//import 'screens/feeds.dart';
 
 void main() {
   runApp(MyApp());
