@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'feeds.dart';
+import 'feeds.dart';
 // class SecondScreen extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
@@ -115,6 +117,33 @@ class _MyHomePageState extends State<MyHomePage> {
                           // onPressed: () {
                             
                           // }, //link to feeds
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20.0),
+                GestureDetector(
+                  onTap: (){
+                    print("page change: Feeds");
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) => Feeds()));
+    },
+
+                child: Container( // Test button
+                  height: 40.0,
+                  child: Material(
+                    borderRadius: BorderRadius.circular(20.0),
+                    shadowColor: Colors.orangeAccent,
+                    color: Color(0xffff6240),
+                    elevation: 7.0,
+                      child: Center(
+                        child: Text(
+                          'TEST',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Rublik'),
                         ),
                       ),
                     ),
