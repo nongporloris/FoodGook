@@ -9,11 +9,13 @@ void main() {
   runApp(MyApp());
 }
 
+//splash screen
 class MyApp extends StatelessWidget {
+  //root
   @override
   Widget build(BuildContext context) {
     /// Logo with Typer Animated Text example
-    Widget example = SplashScreenView(
+    Widget splash = SplashScreenView(
       //package: splash_screen_view
       home: MyHomePage(),
       duration: 3000,
@@ -29,8 +31,8 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Splash screen Demo',
-      home: example,
+      title: 'FoodGook',
+      home: splash,
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         '/signup': (BuildContext context) => new SignupPage()
