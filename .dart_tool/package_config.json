@@ -218,13 +218,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "splash_screen",
+      "name": "foodgook",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-28T13:09:56.187534Z",
+  "generated": "2021-05-01T20:55:22.508395Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }

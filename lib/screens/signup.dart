@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:email_validator/email_validator.dart';
+// import 'package:email_validator/email_validator.dart';
 
 class SignupPage extends StatefulWidget {
   @override
@@ -12,9 +12,8 @@ class _SignupPageState extends State<SignupPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
         resizeToAvoidBottomInset: false,
-        body: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+        body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <
+            Widget>[
           Container(
             child: Stack(
               children: <Widget>[

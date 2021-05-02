@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
 import 'screens/signin.dart';
-import 'screens/signup.dart';
+// import 'screens/signup.dart';
 //import 'screens/feeds.dart';
 
 void main() {
@@ -29,12 +29,18 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: 'Splash screen Demo',
+      title: 'FoodGook',
       home: example,
-      debugShowCheckedModeBanner: false,
-      routes: <String, WidgetBuilder>{
-        '/signup': (BuildContext context) => new SignupPage()
-      },
+      // routes: {
+      //   'LoginScreen': (context) => LogIn(),
+      //   'ContactUsScreen': (context) => ContactUs(),
+      //   'AboutUsScreen': (context) => AboutUs(),
+      //   'MainScreen': (context) => MainScreen(),
+      //   'ProfileScreen': (context) => Profile(),
+      //   'SignUpScreen': (context) => SignUp(),
+      //   //'RecipeViewScreen': (context) => RecipeViewScreen(),
+      //   'AddRecipeScreen':(context) => AddRecipe(),
+      // }
     );
   }
 }
