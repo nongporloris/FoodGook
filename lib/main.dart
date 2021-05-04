@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'FoodGook',
-      home: splash,
+      home: splash, //this file
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         '/signup': (BuildContext context) => new SignupPage()
