@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'feeds.dart';
+import 'package:foodgook/screens/rrrr.dart';
 // class SecondScreen extends StatelessWidget {
 //   @override
 //   Widget build(BuildContext context) {
@@ -13,12 +12,12 @@ import 'feeds.dart';
 //   }
 // }
 
-class MyHomePage extends StatefulWidget {
+class SignInPage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _SignInPageState createState() => new _SignInPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -127,8 +126,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     GestureDetector(
                       onTap: () {
                         print("page change: Feeds");
-                        Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => Feeds()));
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => HomeScreen()));
                       },
                       child: Container(
                         // Test button
