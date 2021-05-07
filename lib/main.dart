@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     /// Logo with Typer Animated Text example
     Widget splash = SplashScreenView(
       //package: splash_screen_view
-      home: MyHomePage(),
+      home: MyHomePage(), //SignInPage
       duration: 3000,
       imageSize: 100,
       imageSrc: "logo.png",
