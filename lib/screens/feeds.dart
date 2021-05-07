@@ -52,35 +52,67 @@ class _FeedsState extends State<Feeds> {
       body: SafeArea(
         child: Container(
           width: double.infinity,
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.symmetric(horizontal: 21.0),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                //header
-                Container(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        'Home',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 30,
+                SizedBox(
+                  height: 15.0,
+                ),
+                Row(
+                  children: <Widget>[
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          boxShadow: [BoxShadow(color: Colors.black45)],
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            fillColor: Colors.white,
+                            filled: true,
+                            hintText: 'Search for people, recipes...',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(15.0),
+                              borderSide: BorderSide.none,
+                            ),
+                            suffixIcon: Icon(Icons.search),
+                          ),
                         ),
                       ),
-                      SizedBox(
-                        width: 220,
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.notifications_none),
-                        color: Colors.grey,
-                        onPressed: () {},
-                      )
-                    ],
-                  ),
-                ),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      padding: const EdgeInsets.all(15.0),
+                      icon: Icon(Icons.notifications),
+                    ),
+                  ],
+                )
+
+                //header
+                // Container(
+                //   child: Row(
+                //     crossAxisAlignment: CrossAxisAlignment.start,
+                //     children: <Widget>[
+                //       Text(
+                //         'Home',
+                //         style: TextStyle(
+                //           fontWeight: FontWeight.bold,
+                //           fontSize: 30,
+                //         ),
+                //       ),
+                //       SizedBox(
+                //         width: 220,
+                //       ),
+                //       IconButton(
+                //         icon: Icon(Icons.notifications_none),
+                //         color: Colors.grey,
+                //         onPressed: () {},
+                //       )
+                //     ],
+                //   ),
+                // ),
                 //list
-                Container()
               ],
             ),
           ),
