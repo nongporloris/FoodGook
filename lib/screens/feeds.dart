@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:foodgook/constant.dart';
 // import 'signin.dart';
 
 class Feeds extends StatefulWidget {
@@ -8,12 +9,11 @@ class Feeds extends StatefulWidget {
 
 class _FeedsState extends State<Feeds> {
   var selectedIndex = 0;
-  // final tabs = [
-  //   Center(child: label('Home')),
-  // ]
+
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    // final size = MediaQuery.of(context).size;
+    Color _notiIconColor = Colors.grey;
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
@@ -64,12 +64,12 @@ class _FeedsState extends State<Feeds> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          boxShadow: [BoxShadow(color: Colors.black45)],
+                          // boxShadow: [BoxShadow(color: Colors.black45)],
                           borderRadius: BorderRadius.circular(15.0),
                         ),
                         child: TextField(
                           decoration: InputDecoration(
-                            fillColor: Colors.white,
+                            fillColor: Color(0xfff2f2f2),
                             filled: true,
                             hintText: 'Search for people, recipes...',
                             border: OutlineInputBorder(
@@ -82,37 +82,72 @@ class _FeedsState extends State<Feeds> {
                       ),
                     ),
                     IconButton(
-                      onPressed: () {},
+                      icon: Icon(Icons.notifications_none),
+                      color: _notiIconColor,
+                      tooltip: 'Show all notifications',
+                      //Still can't change color when clicked
+                      onPressed: () {
+                        setState(() {
+                          if (_notiIconColor == Colors.grey) {
+                            _notiIconColor = Color(0xffff6240);
+                          } else {
+                            _notiIconColor = Colors.grey;
+                          }
+                        });
+                      },
                       padding: const EdgeInsets.all(15.0),
-                      icon: Icon(Icons.notifications),
                     ),
                   ],
-                )
-
-                //header
-                // Container(
-                //   child: Row(
-                //     crossAxisAlignment: CrossAxisAlignment.start,
-                //     children: <Widget>[
-                //       Text(
-                //         'Home',
-                //         style: TextStyle(
-                //           fontWeight: FontWeight.bold,
-                //           fontSize: 30,
-                //         ),
+                ),
+                // ListView(
+                //   children: [
+                //     DefaultTabController(
+                //       length: 2,
+                //       initialIndex: 0,
+                //       child: Column(
+                //         children: [
+                //           TabBar(tabs: [
+                //             Tab(text: 'Feeds'),
+                //             Tab(text: 'Live show')
+                //           ]),
+                //           Container(
+                //             height: 300.0,
+                //             child: TabBarView(
+                //               children: [
+                //                 Center(child: Text('Feeds here')),
+                //                 Center(child: Text('Live show here')),
+                //               ],
+                //             ),
+                //           )
+                //         ],
                 //       ),
-                //       SizedBox(
-                //         width: 220,
-                //       ),
-                //       IconButton(
-                //         icon: Icon(Icons.notifications_none),
-                //         color: Colors.grey,
-                //         onPressed: () {},
-                //       )
-                //     ],
-                //   ),
+                //     )
+                //   ],
                 // ),
-                //list
+                // Feeds and Live show tabs
+                // SizedBox(
+                //   height: 15.0,
+                // ),
+                // Row(
+                //   crossAxisAlignment: CrossAxisAlignment.start,
+                //   children: <Widget>[
+                //     Text(
+                //       'Feeds',
+                //       style: TextStyle(
+                //         fontSize: 16,
+                //         fontWeight: FontWeight.bold,
+                //         color: Colors.grey,
+                //       ),
+                //     ),
+                //     Text(
+                //       'Live show',
+                //       style: TextStyle(
+                //         fontSize: 16,
+                //         color: Colors.grey,
+                //       ),
+                //     ),
+                //   ],
+                // ),
               ],
             ),
           ),
