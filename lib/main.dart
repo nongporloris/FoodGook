@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
 
-import 'screens/signin.dart';
-import 'screens/signup.dart';
+import 'views/signin.dart';
+import 'views/signup.dart';
 //import 'screens/feeds.dart';
 
 void main() {

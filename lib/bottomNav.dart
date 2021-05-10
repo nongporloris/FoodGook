@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:news_app/views/account_view.dart';
-import 'package:news_app/views/favorite_view.dart';
-import 'package:news_app/views/home_view.dart';
-import 'package:news_app/views/search_view.dart';
+import 'package:foodgook/views/grocery_view.dart';
+import 'package:foodgook/views/forum_view.dart';
+import 'package:foodgook/views/feeds_view.dart';
+import 'package:foodgook/views/recipes_view.dart';
 
 class BottomNav extends StatefulWidget {
   @override
@@ -20,10 +20,14 @@ class _BottomNavState extends State<BottomNav> {
   }
 
   static List<Widget> _bottomNavView = [
-    HomeView(),
-    SearchView(),
-    FavoriteView(),
-    AccountView(),
+    // HomeView(),
+    // SearchView(),
+    // FavoriteView(),
+    // AccountView(),
+    FeedsView(),
+    RecipesView(),
+    ForumView(),
+    GroceryView(),
   ];
 
   @override
