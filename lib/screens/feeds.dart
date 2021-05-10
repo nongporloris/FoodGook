@@ -76,6 +76,27 @@ class _FeedsState extends State<Feeds> with TickerProviderStateMixin {
               ),
             ]),
       ),
+      body: TabBarView(
+        children: <Widget>[
+          NestedTabBar(),
+          Center(
+            child: Text("Recipes"),
+            // RecipesPage(),
+            //Add page route
+          ),
+          Center(
+            child: Text("Forum"),
+          ),
+          Center(
+            child: Text("Grocery"),
+            //Add page route
+          ),
+          Center(
+            child: Text("Profile"),
+          ),
+        ],
+        controller: _tabController,
+      ),
       floatingActionButton: SpeedDial(
         animatedIcon: AnimatedIcons.menu_close,
         backgroundColor: Colors.white,
@@ -98,26 +119,6 @@ class _FeedsState extends State<Feeds> with TickerProviderStateMixin {
             onTap: () => print('Second'),
           )
         ],
-      ),
-      body: TabBarView(
-        children: <Widget>[
-          NestedTabBar(),
-          Center(
-            child: Text("Recipes"),
-            //Add page route
-          ),
-          Center(
-            child: Text("Forum"),
-          ),
-          Center(
-            child: Text("Grocery"),
-            //Add page route
-          ),
-          Center(
-            child: Text("Profile"),
-          ),
-        ],
-        controller: _tabController,
       ),
     );
   }
