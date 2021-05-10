@@ -34,77 +34,7 @@ class _FeedsState extends State<Feeds> with TickerProviderStateMixin {
     // final size = MediaQuery.of(context).size;
     Color _notiIconColor = Colors.grey;
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(120.0),
-        child: SafeArea(
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 21.0),
-            child: SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  SizedBox(
-                    height: 15.0,
-                  ),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        child: Container(
-                          decoration: BoxDecoration(
-                            // boxShadow: [BoxShadow(color: Colors.black45)],
-                            borderRadius: BorderRadius.circular(15.0),
-                          ),
-                          child: TextField(
-                            decoration: InputDecoration(
-                              fillColor: Color(0xfff2f2f2),
-                              filled: true,
-                              hintText: 'Search for people, recipes...',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(15.0),
-                                borderSide: BorderSide.none,
-                              ),
-                              suffixIcon: Icon(Icons.search),
-                            ),
-                          ),
-                        ),
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.notifications_none),
-                        color: _notiIconColor,
-                        tooltip: 'Show all notifications',
-                        //Still can't change color when clicked
-                        onPressed: () {
-                          setState(() {
-                            if (_notiIconColor == Colors.grey) {
-                              _notiIconColor = Color(0xffff6240);
-                            } else {
-                              _notiIconColor = Colors.grey;
-                            }
-                          });
-                        },
-                        padding: const EdgeInsets.all(15.0),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-      // appBar: AppBar(
-      //   backgroundColor: Color(0xffff6240),
-      //   // title: Text("Home"),
-      //   // centerTitle: true,
-      //   actions: <Widget>[
-      //     IconButton(
-      //       icon: Icon(
-      //         Icons.notifications_none,
-      //       ),
-      //       onPressed: () {},
-      //     ),
-      //   ],
-      // ),
+      resizeToAvoidBottomInset : false,
       bottomNavigationBar: Material(
         color: Colors.white,
         child: TabBar(
@@ -137,7 +67,81 @@ class _FeedsState extends State<Feeds> with TickerProviderStateMixin {
       ),
       body: TabBarView(
         children: <Widget>[
-          NestedTabBar(),
+          Column(
+            children: [
+              Container(
+                child: SafeArea(
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.symmetric(horizontal: 21.0),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: <Widget>[
+                          SizedBox(
+                            height: 15.0,
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Expanded(
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    // boxShadow: [BoxShadow(color: Colors.black45)],
+                                    borderRadius: BorderRadius.circular(15.0),
+                                  ),
+                                  child: TextField(
+                                    decoration: InputDecoration(
+                                      fillColor: Color(0xfff2f2f2),
+                                      filled: true,
+                                      hintText: 'Search for people, recipes...',
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(15.0),
+                                        borderSide: BorderSide.none,
+                                      ),
+                                      suffixIcon: Icon(Icons.search),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.notifications_none),
+                                color: _notiIconColor,
+                                tooltip: 'Show all notifications',
+                                //Still can't change color when clicked
+                                onPressed: () {
+                                  setState(() {
+                                    if (_notiIconColor == Colors.grey) {
+                                      _notiIconColor = Color(0xffff6240);
+                                    } else {
+                                      _notiIconColor = Colors.grey;
+                                    }
+                                  });
+                                },
+                                padding: const EdgeInsets.all(15.0),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              // appBar: AppBar(
+              //   backgroundColor: Color(0xffff6240),
+              //   // title: Text("Home"),
+              //   // centerTitle: true,
+              //   actions: <Widget>[
+              //     IconButton(
+              //       icon: Icon(
+              //         Icons.notifications_none,
+              //       ),
+              //       onPressed: () {},
+              //     ),
+              //   ],
+              // ),
+              NestedTabBar(),
+            ],
+          ),
           Center(
             child: Text("Recipes"),
             // RecipesPage(),
