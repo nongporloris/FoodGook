@@ -111,30 +111,3 @@ List<String> twomenus = ['Feeds', 'Livs show'];
 //     "distance": "1"
 //   },
 // ];
-
-// List<Map> drawerItems = [
-//   {
-//     "icon": CupertinoIcons.house,
-//     "title": "Adoption",
-//   },
-//   {
-//     "icon": CupertinoIcons.envelope_open,
-//     "title": "Donation",
-//   },
-//   {
-//     "icon": CupertinoIcons.plus,
-//     "title": "Add Pet",
-//   },
-//   {
-//     "icon": CupertinoIcons.heart,
-//     "title": "Favourites",
-//   },
-//   {
-//     "icon": CupertinoIcons.tray,
-//     "title": "Messages",
-//   },
-//   {
-//     "icon": CupertinoIcons.person,
-//     "title": "Profile",
-//   }
-// ];
