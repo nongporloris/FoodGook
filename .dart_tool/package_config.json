@@ -38,6 +38,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "convert",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "1.17"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.3",
       "packageUri": "lib/",
@@ -104,6 +110,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_svg",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.17.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/mookch/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -150,6 +162,24 @@
       "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "path_drawing",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_drawing-0.4.1+1",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/path_parsing-0.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
     },
     {
       "name": "plugin_platform_interface",
@@ -224,13 +254,19 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///Users/mookch/development/flutter/.pub-cache/hosted/pub.dartlang.org/xml-3.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "foodgook",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-05-10T04:21:59.201739Z",
+  "generated": "2021-05-10T06:51:25.014410Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }
